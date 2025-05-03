@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vikoisoft - Blockchain software development</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://vikoisoft.com/assets/vikoisoft/images/logo-2.svg"
+      type="image/x-icon"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER / NAV -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm px-3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="https://vikoisoft.com//assets/vikoisoft/logo.svg"
+            alt="Vikoisoft Logo"
+            style="height: 40px; margin-left: 10px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexvechungtoi.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexblockchain.html">Blockchain</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexwhyus.html">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexdichvu.html">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexlienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <a href="?lang=vi"
+              ><img src="https://flagcdn.com/w20/vn.png" class="mx-1" alt="vi"
+            /></a>
+            <a href="?lang=en"
+              ><img src="https://flagcdn.com/w20/gb.png" class="mx-1" alt="en"
+            /></a>
+            <a href="?lang=en"
+              ><img src="https://flagcdn.com/w20/kr.png" class="mx-1" alt="en"
+            /></a>
+            <a href="?lang=en"
+              ><img src="https://flagcdn.com/w20/jp.png" class="mx-1" alt="en"
+            /></a>
+            <button id="toggle-theme" class="btn btn-sm btn-outline-light ms-3">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <!-- Slider -->
+        <div class="slider">
+          <div class="slides" id="slides">
+            <div class="slide">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/a2.jpg"
+                alt="1"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/banner/pic__home_banner_2.jpg"
+                alt="2"
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/banner/pic__home_banner_3.jpg"
+                alt="3"
+              />
+            </div>
+          </div>
+          <!-- Nút điều hướng -->
+          <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+          <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+          <div class="dots">
+            <span onclick="goToSlide(0)" class="dot active"></span>
+            <span onclick="goToSlide(1)" class="dot"></span>
+            <span onclick="goToSlide(2)" class="dot"></span>
+          </div>
+        </div>
+
+        <!-- Nội dung -->
+        <div class="hero-content">
+          <div class="hero-content-inner">
+            <p>
+              Công ty cổ phần Vikoisoft là một trong những công ty Công nghệ
+              thông tin hàng đầu tại Việt Nam, chuyên cung cấp dịch vụ phát
+              triển phần mềm và giải pháp phần mềm trong lĩnh vực Blockchain cho
+              các doanh nghiệp trong nước và quốc tế.
+            </p>
+            <div class="gr-btn">
+              <a class="btn btn-secondary" href="indexvechungtoi.html"
+                >Về chúng tôi</a
+              >
+              <a class="btn btn-border" href="indexlienhe.html">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Cột trái: Nội dung -->
+          <div class="col-md-6">
+            <div class="about-content">
+              <div class="section-title mb-4">
+                <span>CHÚNG TÔI LÀ </span>
+                <div class="d-inline-block">
+                  <span class="text-main">VIKOI</span>
+                  <span class="text-secondary">SOFT</span>
+                </div>
+              </div>
+
+              <p style="text-align: justify">
+                Đối tác cung cấp dịch vụ Blockchain và phát triển phần mềm hàng
+                đầu tại Việt Nam. Với đội ngũ kỹ sư nhiều năm kinh nghiệm trong
+                việc tiến hành các dự án Blockchain cũng như phát triển phần
+                mềm, chúng tôi tự tin với vai trò và vị thế của mình trong lĩnh
+                vực cung cấp các dịch vụ ứng dụng công nghệ cao.
+              </p>
+
+              <p>
+                <a class="btn btn-secondary" href="indexvechungtoi.html">
+                  <span class="text-uppercase fw-bold">Xem thêm</span>
+                  <img
+                    alt=""
+                    src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/arrow-right.svg"
+                  />
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Cột phải: Hình ảnh -->
+          <div class="col-md-6">
+            <div class="hover-img">
+              <figure>
+                <img
+                  src="https://www.vikoisoft.com/assets/vikoisoft/images/banner/pic__home_we_are_vikoisoft.png"
+                  alt="we are vikoisoft"
+                  class="about-img"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ecosystem">
+      <div class="container">
+        <!-- Tiêu đề -->
+        <div class="section-title text-center mb-3">
+          <div class="d-inline-block">
+            <span class="text-main">DỊCH VỤ </span>
+            <span class="text-secondary">của Vikoi soft</span>
+          </div>
+        </div>
+
+        <p class="section-content text-center mb-5">
+          Vikoisoft cung cấp dịch vụ phát triển phần mềm trong các lĩnh vực và
+          ứng dụng đa dạng
+        </p>
+
+        <!-- Danh sách dịch vụ -->
+        <div class="ecosystem-list">
+          <!-- 1 -->
+          <div class="ecosystem-item">
+            <div class="ecosystem-icon">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/Property 1=web-page.svg"
+                alt=""
+              />
+            </div>
+            <h3>Thiết kế web responsive, landing page</h3>
+            <p>
+              Vikoisoft sẽ đem đến những thiết kế web chuẩn responsive có khả
+              năng hiển thị tốt trên mọi loại thiết bị, trình duyệt, mọi kích cỡ
+              màn hình, cửa sổ.
+            </p>
+          </div>
+
+          <!-- 2 -->
+          <div class="ecosystem-item">
+            <div class="ecosystem-icon">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/Property 1=world.svg"
+                alt=""
+              />
+            </div>
+            <h3>Phát triển ứng dụng website</h3>
+            <p>
+              Đa dạng trong mọi lĩnh vực: ứng dụng sàn thương mại điện tử, ứng
+              dụng quản lý đơn hàng, ứng dụng tư vấn mua bán sản phẩm, ứng dụng
+              tổng hợp dữ liệu kinh doanh, ứng dụng báo cáo công việc,..vv...
+            </p>
+          </div>
+
+          <!-- 3 -->
+          <div class="ecosystem-item">
+            <div class="ecosystem-icon">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/Property 1=responsive.svg"
+                alt=""
+              />
+            </div>
+            <h3>Phát triển ứng dụng di động</h3>
+            <p>
+              Vikoisoft phát triển các ứng dụng di động tương thích với nhiều hệ
+              điều hành, trong đó phổ biến nhất là iOS và Android.
+            </p>
+          </div>
+
+          <!-- 4 -->
+          <div class="ecosystem-item">
+            <div class="ecosystem-icon">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/Property 1=cms.svg"
+                alt=""
+              />
+            </div>
+            <h3>Phát triển ứng dụng desktop</h3>
+            <p>
+              Phát triển những ứng dụng desktop thích hợp với các hệ điều hành
+              Window và MacOS, mang đến sự tiện lợi khi sử dụng, tiết kiệm thời
+              gian khi truy cập, dễ dàng tìm kiếm cho người dùng.
+            </p>
+          </div>
+
+          <!-- 5 -->
+          <div class="ecosystem-item">
+            <div class="ecosystem-icon">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/Property 1=layers.svg"
+                alt=""
+              />
+            </div>
+            <h3>Thiết kế UI/UX</h3>
+            <p>
+              Thiết kế tối ưu, hiện đại, cung cấp trải nghiệm mượt mà cho người
+              sử dụng, giúp người dùng dễ dàng tiếp cận thông tin, hướng dẫn
+              trực quan, nhanh chóng thực hiện các quyết định chuyển đổi.
+            </p>
+          </div>
+
+          <!-- 6 -->
+          <div class="ecosystem-item">
+            <div class="ecosystem-icon">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/Property 1=Monitoring.svg"
+                alt=""
+              />
+            </div>
+            <h3>Tích hợp hệ thống</h3>
+            <p>
+              Vikoisoft còn có chuyên môn trong việc phát triển các ứng dụng
+              tích hợp hệ thống, bảo trì, thêm/thay đổi chức năng cho các hệ
+              thống trong doanh nghiệp.
+            </p>
+          </div>
+
+          <!-- 7 -->
+          <div class="ecosystem-item">
+            <div class="ecosystem-icon">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/Property 1=Monitoring.svg"
+                alt=""
+              />
+            </div>
+            <h3>Ứng dụng Blockchain</h3>
+            <p>
+              Từ ý tưởng đến triển khai, Vikoisoft cung cấp các phần mềm và giải
+              pháp blockchain tùy biến cho các doanh nghiệp đáp ứng nhu cầu tự
+              động hóa, bảo mật và tối ưu hóa hoạt động.
+            </p>
+          </div>
+
+          <!-- 8 -->
+          <div class="ecosystem-item">
+            <div class="ecosystem-icon">
+              <img
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/Property 1=repair.svg"
+                alt=""
+              />
+            </div>
+            <h3>Dịch vụ gia công phần mềm</h3>
+            <p>
+              Vikoisoft nhận yêu cầu từ phía khách hàng để thực hiện 1 phần hoặc
+              toàn bộ dự án phần mềm. Vikoisoft kỳ vọng và tự tin nhận các yêu
+              cầu dù là những bài toán khó từ phía khách hàng.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section blockchain -->
+    <section class="blockchain">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Cột trái: Nội dung -->
+          <div class="col-md-6">
+            <h2 class="blockchain-title">VikoiSoft với công nghệ Blockchain</h2>
+            <p class="text-white" style="text-align: justify">
+              Vikoisoft thành lập dựa trên những kinh nghiệm lâu năm trong việc
+              phát triển các dự án ứng dụng Blockchain và phát triển phầm mềm
+              đến từ nhiều đối tác của các quốc gia lớn trên thế giới như: Nhật
+              Bản, Hàn Quốc, Mỹ,....
+            </p>
+            <a class="btn btn-secondary" href="indexblockchain.html">
+              <span class="text-uppercase fw-bold">XEM THÊm</span>
+              <img
+                alt=""
+                src="https://www.vikoisoft.com/assets/vikoisoft/images/icon/arrow-right.svg"
+              />
+            </a>
+          </div>
+
+          <!-- Cột phải: Hình ảnh -->
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="hover-img">
+              <figure>
+                <img
+                  src="https://www.vikoisoft.com/assets/vikoisoft/images/home/blockchain.png"
+                  alt="blockchain"
+                  class="blockchain-img"
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ability bg-world">
+      <div class="container">
+        <div class="section-title text-center mb-4">
+          <span>Khả năng của </span>
+          <div class="d-inline-block">
+            <span class="text-main">Vikoi</span>
+            <span class="text-secondary">soft</span>
+          </div>
+        </div>
+
+        <div class="technology">
+          <!-- Tabs -->
+          <ul class="tab-links">
+            <li>
+              <button
+                class="tablink"
+                onclick="openTechnology('all', this)"
+                id="defaultOpen"
+              >
+                All
+              </button>
+            </li>
+            <li>
+              <button class="tablink" onclick="openTechnology('web', this)">
+                Web Development
+              </button>
+            </li>
+            <li>
+              <button class="tablink" onclick="openTechnology('mobile', this)">
+                Mobile Development
+              </button>
+            </li>
+            <li>
+              <button
+                class="tablink"
+                onclick="openTechnology('blockchain', this)"
+              >
+                Blockchain
+              </button>
+            </li>
+          </ul>
+
+          <!-- Danh sách công nghệ -->
+          <div id="all" class="technology--list">
+            <!-- Web -->
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/laravel.svg"
+                alt="laravel"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/nodejs.svg"
+                alt="nodejs"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/java.svg"
+                alt="java"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/angular.svg"
+                alt="angular"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/nestjs.svg"
+                alt="nestjs"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/react.svg"
+                alt="react"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/vue.svg"
+                alt="vue"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/flask.svg"
+                alt="flask"
+              />
+            </div>
+
+            <!-- Mobile -->
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/mobile/flutter.svg"
+                alt="flutter"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/mobile/nat.png"
+                alt="react native"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/mobile/android.svg"
+                alt="android"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/mobile/ios.png"
+                alt="ios"
+              />
+            </div>
+
+            <!-- Blockchain -->
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/blockchain/btc.svg"
+                alt="btc"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/blockchain/binance.svg"
+                alt="bnb"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/blockchain/eth.svg"
+                alt="eth"
+              />
+            </div>
+
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/blockchain/klaytn.svg"
+                alt="klaytn"
+              />
+            </div>
+          </div>
+
+          <div id="web" class="technology--list" style="display: none">
+            <!-- Web -->
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/laravel.svg"
+                alt="laravel"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/nodejs.svg"
+                alt="nodejs"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/java.svg"
+                alt="java"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/angular.svg"
+                alt="angular"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/nestjs.svg"
+                alt="nestjs"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/react.svg"
+                alt="react"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/vue.svg"
+                alt="vue"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/web/flask.svg"
+                alt="flask"
+              />
+            </div>
+          </div>
+
+          <div id="mobile" class="technology--list" style="display: none">
+            <!-- Mobile -->
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/mobile/flutter.svg"
+                alt="flutter"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/mobile/nat.png"
+                alt="react native"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/mobile/android.svg"
+                alt="android"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/mobile/ios.png"
+                alt="ios"
+              />
+            </div>
+          </div>
+
+          <div id="blockchain" class="technology--list" style="display: none">
+            <!-- Blockchain -->
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/blockchain/btc.svg"
+                alt="btc"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/blockchain/binance.svg"
+                alt="bnb"
+              />
+            </div>
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/blockchain/eth.svg"
+                alt="eth"
+              />
+            </div>
+
+            <div class="technology--item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/tech/blockchain/klaytn.svg"
+                alt="klaytn"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="container">
+          <div class="row">
+            <!-- Logo và giới thiệu -->
+            <div class="col-md-4">
+              <a href="#" class="d-block mb-3 header_logo">
+                <img
+                  src="https://vikoisoft.com/assets/vikoisoft/images/logo-white.png"
+                  alt="Vikoisoft logo"
+                  width="200px"
+                />
+              </a>
+              <p style="text-align: justify">
+                Công ty cổ phần Vikoisoft là một trong những công ty Công nghệ
+                thông tin hàng đầu tại Việt Nam, chuyên cung cấp dịch vụ phát
+                triển phần mềm và giải pháp phần mềm trong lĩnh vực Blockchain
+                cho các doanh nghiệp trong nước và quốc tế.
+              </p>
+              <div class="social mt-3">
+                <a href="https://www.facebook.com/vikoisoftvn">
+                  <img
+                    src="https://vikoisoft.com/assets/vikoisoft/images/icon/fb-brands.svg"
+                    alt="facebook"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Dịch vụ -->
+            <div class="col-md-3 col-7">
+              <ul>
+                <li><strong>Dịch vụ của chúng tôi</strong></li>
+                <li><a href="#">Gia công phần mềm 1</a></li>
+                <li><a href="#">Gia công phần mềm</a></li>
+              </ul>
+            </div>
+
+            <!-- Link -->
+            <div class="col-md-2 col-5">
+              <ul>
+                <li><strong>Link</strong></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+
+            <!-- Liên hệ -->
+            <div class="col-md-3">
+              <ul>
+                <li><strong>Contact</strong></li>
+                <li>📞 +84 944-150-825</li>
+                <li>📧 info@vikoisoft.com</li>
+                <li>
+                  📍 Tầng 10, Tòa nhà Việt Á Tower, Số 9 phố Duy Tân, Cầu Giấy,
+                  Hà Nội
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bản quyền -->
+          <div class="footer-copyright">
+            Copyright © 2025 <a href="https://vikoisoft.com">VIKOISOFT.COM</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

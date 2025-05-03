@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vikoisoft - Blockchain software development</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://vikoisoft.com/assets/vikoisoft/images/logo-2.svg"
+      type="image/x-icon"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER / NAV -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm px-3"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img
+            src="https://vikoisoft.com//assets/vikoisoft/logo.svg"
+            alt="Vikoisoft Logo"
+            style="height: 40px; margin-left: 10px"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="mainNavbar"
+        >
+          <ul class="navbar-nav mx-auto text-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexvechungtoi.html">Về chúng tôi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexblockchain.html">Blockchain</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexwhyus.html">Why Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexdichvu.html">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="indexlienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center">
+            <a href="?lang=vi"
+              ><img src="https://flagcdn.com/w20/vn.png" class="mx-1" alt="vi"
+            /></a>
+            <a href="?lang=en"
+              ><img src="https://flagcdn.com/w20/gb.png" class="mx-1" alt="en"
+            /></a>
+            <a href="?lang=en"
+              ><img src="https://flagcdn.com/w20/kr.png" class="mx-1" alt="en"
+            /></a>
+            <a href="?lang=en"
+              ><img src="https://flagcdn.com/w20/jp.png" class="mx-1" alt="en"
+            /></a>
+            <button id="toggle-theme" class="btn btn-sm btn-outline-light ms-3">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="breadcrumb">
+      <img
+        src="https://vikoisoft.com/assets/vikoisoft/images/banner/pic__banner_about_us.jpg"
+        alt="Banner Về chúng tôi"
+        class="breadcrumb-bg"
+      />
+
+      <div class="breadcrumb-content">
+        <div class="breadcrumb-inner">
+          <h1>VỀ CHÚNG TÔI</h1>
+          <div class="breadcrumb-nav d-flex align-items-center">
+            <svg
+              fill="none"
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.1836 11.8364L13.1274 2.7848L12.5204 2.17777C12.382 2.04037 12.195 1.96326 12 1.96326C11.8051 1.96326 11.618 2.04037 11.4797 2.17777L1.81645 11.8364C1.67473 11.9775 1.56272 12.1457 1.48705 12.3308C1.41137 12.516 1.37355 12.7145 1.37583 12.9145C1.3852 13.7395 2.07192 14.3981 2.89692 14.3981H3.89302V22.0317H20.1071V14.3981H21.1243C21.525 14.3981 21.9024 14.241 22.186 13.9575C22.3256 13.8183 22.4363 13.6528 22.5115 13.4705C22.5867 13.2883 22.6251 13.0929 22.6243 12.8957C22.6243 12.4973 22.4672 12.12 22.1836 11.8364ZM13.3125 20.3442H10.6875V15.5629H13.3125V20.3442ZM18.4196 12.7106V20.3442H14.8125V15.0004C14.8125 14.4825 14.393 14.0629 13.875 14.0629H10.125C9.60708 14.0629 9.18755 14.4825 9.18755 15.0004V20.3442H5.58052V12.7106H3.33052L12.0024 4.04574L12.5438 4.58714L20.6719 12.7106H18.4196Z"
+                fill="white"
+              />
+            </svg>
+            <a href="index.html">Trang chủ</a>
+            <span>/</span>
+            <span>Về chúng tôi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about -->
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-content">
+              <div class="section-title mb-4">
+                <span>Chúng tôi là </span>
+
+                <div class="d-inline-block">
+                  <span class="text-main">Vikoi</span>
+                  <span class="text-secondary">soft</span>
+                </div>
+              </div>
+
+              <p style="text-align: justify">
+                <strong
+                  >Vikoisoft - Đối tác cung cấp dịch vụ Blockchain và phát triển
+                  phần mềm hàng đầu tại Việt Nam.</strong
+                >
+              </p>
+
+              <p style="text-align: justify">
+                Công ty cổ phần Vikoisoft là một trong những công ty Công nghệ
+                thông tin hàng đầu tại Việt Nam, chuyên cung cấp dịch vụ phát
+                triển phần mềm và giải pháp phần mềm trong lĩnh vực blockchain
+                cho các doanh nghiệp trong nước và quốc tế. Thấu hiểu được sứ
+                mệnh nghiên cứu và xây dựng nên giải pháp CNTT và các sản phẩm
+                IT tối ưu nhất nhằm đem lại những giá trị thực tế cho khách
+                hàng, Vikoisoft luôn luôn nỗ lực tạo ra những đóng góp tích cực
+                cho sự phát triển của ngành CNTT Việt Nam nói riêng và sự phát
+                triển của đất nước nói chung.
+              </p>
+
+              <p style="text-align: justify">
+                Với nhiều kinh nghiệm trong việc lên kế hoạch, thiết kế, phát
+                triển phần mềm, triển khai các dự án Blockchain và các dịch vụ
+                CNTT khác, chúng tôi tự tin với vai trò và vị thế của mình trong
+                lĩnh vực cung cấp các dịch vụ ứng dụng công nghệ cao. Những
+                thành tựu Vikoisoft đạt được đều là nhờ sự chuyên nghiệp trong
+                cách vận hành của ban lãnh đạo, sự hăng hái tích cực cống hiến
+                của đội ngũ kỹ sư công nghệ thông tin tài năng, và nhờ sự tin
+                tưởng ủng hộ của Quý khách hàng và Quý đối tác.
+              </p>
+
+              <p style="text-align: justify">
+                Với đội ngũ nhân viên trẻ, năng động và kiến thức vững vàng,
+                Vikoisoft luôn lấy chất lượng và sự hài lòng của khách hàng làm
+                định hướng phát triển. Chúng tôi luôn nỗ lực thấu hiểu và đáp
+                ứng mọi nhu cầu của khách hàng từ những chi tiết nhỏ nhất. Đến
+                với Vikoisoft, khách hàng không chỉ giải được bài toán khó về
+                CNTT đang vướng mắc với những giải pháp tối ưu và tiết kiệm chi
+                phí mà còn được trải nghiệm phong cách làm việc chuyên nghiệp,
+                uy tín và hiệu quả tuyệt đối.
+              </p>
+
+              <p style="text-align: justify">
+                Vikoisoft kỳ vọng sẽ trở thành 1 đối tác mới, đầy tiềm năng của
+                tất cả các doanh nghiệp Việt Nam nói riêng và trên toàn thế giới
+                nói chung trong việc hợp tác cung cấp dịch vụ Blockchain và phát
+                triển đa dạng các loại phần mềm cho mọi lĩnh vực.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cột phải: hình ảnh -->
+          <div class="col-md-6">
+            <div class="about-video-wrapper text-center">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/banner/pic__home_about_us.jpg"
+                alt="About Vikoisoft"
+                class="about-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- slide 2 -->
+
+    <section class="vision-mission">
+      <div class="vision">
+        <img
+          src="https://vikoisoft.com/assets/vikoisoft/images/about/tn.svg"
+          alt="Tầm nhìn"
+          class="icon"
+        />
+        <h2>TẦM NHÌN<br /><strong>VIKOISOFT</strong></h2>
+        <p>
+          Blockchain đang dần trở thành công nghệ mang tính cách mạng của thời
+          đại. Đón đầu xu thế toàn cầu đó, Vikoisoft thành lập với định hướng
+          trở thành doanh nghiệp cung cấp dịch vụ, giải pháp Blockchain hàng đầu
+          tại Việt Nam; đồng thời trở thành đối tác đáng tin cậy trong mọi lĩnh
+          vực ứng dụng blockchain và phát triển phần mềm thông minh cho doanh
+          nghiệp của bạn.
+        </p>
+      </div>
+      <div class="mission">
+        <img
+          src="https://vikoisoft.com/assets/vikoisoft/images/about/sm.svg"
+          alt="Sứ mệnh"
+          class="icon"
+        />
+        <h2>SỨ MỆNH<br /><strong>VIKOISOFT</strong></h2>
+        <p>
+          Vikoisoft mang trong mình sứ mệnh hỗ trợ đắc lực cho người dùng và
+          doanh nghiệp nhằm phá vỡ rào cản giới hạn về công nghệ thông tin đơn
+          lập. Thêm vào đó, Vikoisoft tận dụng những sức mạnh của công nghệ
+          blockchain để ứng dụng vào các bài toán phát triển phần mềm và dịch vụ
+          đa dạng.
+        </p>
+      </div>
+    </section>
+    <!-- slide 3 -->
+    <section class="paradigm bg-world">
+      <div class="container">
+        <div class="section-title text-center mb-4">
+          <span>Quy mô của </span>
+          <div class="d-inline-block">
+            <span class="text-main">Vikoi</span>
+            <span class="text-secondary">soft</span>
+          </div>
+        </div>
+
+        <p class="section-content text-center mb-5">
+          Chúng tôi cung cấp đội ngũ lập trình viên full-stack với nhiều năm
+          kinh nghiệm phát triển các dự án dựa trên giải pháp Blockchain như:
+          thị trường NFT, phát triển game, sàn giao dịch tiền điện tử, ví điện
+          tử, smart contracts... Ngoài ra, kỹ sư của Vikoisoft thành thạo trong
+          việc phát triển phần mềm trong hầu hết các lĩnh vực của đời sống như:
+          y tế, giáo dục, thương mại, kinh doanh, xây dựng, hành chính.... Đội
+          ngũ kỹ sư của Vikoisoft tự tin có thể đáp ứng mọi yêu cầu trong mọi
+          lĩnh vực khác nhau từ Quý khách hàng.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="paradigm-item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/icon/about/05.png"
+                alt=""
+              />
+              <h5>Số lượng nhân sự</h5>
+              <p>20 người đạt trình độ từ Cử nhân trở lên</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="paradigm-item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/icon/about/12.png"
+                alt=""
+              />
+              <h5>Trình độ nhân sự</h5>
+              <p>Tiến sỹ(02), Thạc sỹ (05), Cử nhân và Kỹ sư (13)</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="paradigm-item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/icon/about/06.png"
+                alt=""
+              />
+              <h5>Trình độ Ngoại ngữ</h5>
+              <p>Tiếng Anh (70%), Nhật (10%), Hàn (15%), Khác (5%)</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="paradigm-item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/icon/about/04.png"
+                alt=""
+              />
+              <h5>Nhân lực R&D</h5>
+              <p>2 người trình độ Tiến sỹ chuyên nghiên cứu phát triển</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="paradigm-item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/icon/about/01.png"
+                alt=""
+              />
+              <h5>Blockchain</h5>
+              <p>Nhân lực chuyên sâu triển khai các dự án Blockchain</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="paradigm-item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/icon/about/09.png"
+                alt=""
+              />
+              <h5>Công nghệ mới</h5>
+              <p>Luôn tiên phong áp dụng công nghệ hiện đại, tiên tiến</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="paradigm-item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/icon/about/11.png"
+                alt=""
+              />
+              <h5>Năng lực công nghệ</h5>
+              <p>Kỹ sư lập trình viên full-stack có kinh nghiệm đa lĩnh vực</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="paradigm-item">
+              <img
+                src="https://vikoisoft.com/assets/vikoisoft/images/icon/about/07.png"
+                alt=""
+              />
+              <h5>Tư vấn & Triển khai</h5>
+              <p>Chuyên gia tư vấn tận tâm, chuyên nghiệp, giàu kinh nghiệm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="paradigm bg-world py-5">
+      <div class="container">
+        <!-- Tiêu đề chính -->
+        <div class="section-title text-center">
+          <strong class="title-uppercase">THÔNG TIN CÔNG TY</strong>
+        </div>
+
+        <ul class="company-info">
+          <li>Tên công ty: Công ty Cổ phần Vikoisoft</li>
+          <li>
+            Lĩnh vực hoạt động: Phân phối và cung cấp các dịch vụ, sản phẩm phần
+            mềm và các ứng dụng Blockchain
+          </li>
+          <li>
+            Trụ sở chính: Tầng 10, Toà nhà Việt Á Tower, Số 9 phố Duy Tân, Cầu
+            Giấy, Hà Nội
+          </li>
+          <li>Tổng Giám đốc: Nguyễn Chính Hoàng</li>
+          <li>Điện thoại: 0944 150 825</li>
+          <li>Email: info@vikoisoft.com</li>
+          <li>Là thành viên của Aime Group từ 2022</li>
+        </ul>
+
+        <div class="section-title text-center mt-5">
+          <strong class="title-uppercase"
+            >CÁC CÔNG TY LIÊN QUAN TRONG AIME GROUP</strong
+          >
+        </div>
+
+        <!-- AIMESOFT USA -->
+        <div class="section-title text-center mt-4">
+          <a href="https://aimesoft.com/"
+            ><span class="title-company">AIMESOFT INC. (USA)</span></a
+          >
+        </div>
+        <ul class="company-info">
+          <li>Tên công ty: Aimesoft Inc.</li>
+          <li>Địa chỉ: 2150 Ringwood Ave., San Jose, California 95131, USA</li>
+          <li>Điện thoại: +1 (415) 818 0338</li>
+          <li>Email: info@aimesoft.com</li>
+        </ul>
+
+        <!-- AIMESOFT JAPAN -->
+        <div class="section-title text-center mt-4">
+          <a href="https://aimesoft.com/ja/"
+            ><span class="title-company">AIMESOFT JAPAN</span></a
+          >
+        </div>
+        <ul class="company-info">
+          <li>
+            Địa chỉ: 3F, Shiodome Bldg., 1-2-20 Kaigan, Minato-ku, Tokyo
+            105-0022, Japan
+          </li>
+          <li>Điện thoại: +81-3-6721-8775</li>
+          <li>Email: japan@aimesoft.com</li>
+        </ul>
+
+        <!-- AIMESOFT VIỆT NAM -->
+        <div class="section-title text-center mt-4">
+          <a href="https://aimesoft.com/vi/"
+            ><span class="title-company">AIMESOFT JSC (VIỆT NAM)</span></a
+          >
+        </div>
+        <ul class="company-info">
+          <li>
+            Lĩnh vực hoạt động: Nghiên cứu, phát triển, phân phối và cung cấp
+            dịch vụ liên quan đến phần mềm Trí tuệ nhân tạo đa thể thức
+          </li>
+          <li>Trụ sở chính: Thôn 1, Yên Sở, Hoài Đức, Hà Nội, Việt Nam</li>
+          <li>
+            VPĐD miền Bắc: Tầng 10, Toà nhà Việt Á Tower, Số 9 phố Duy Tân, Cầu
+            Giấy, Hà Nội
+          </li>
+          <li>
+            VPĐD miền Nam: SAV2-01.05 The Sun Avenue, Số 28 Mai Chí Thọ, An Phú,
+            Thủ Đức, TP. Hồ Chí Minh
+          </li>
+          <li>Điện thoại: 098-538-7426</li>
+          <li>Email: info@aimesoft.com</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="container">
+          <div class="row">
+            <!-- Logo và giới thiệu -->
+            <div class="col-md-4">
+              <a href="#" class="d-block mb-3 header_logo">
+                <img
+                  src="https://vikoisoft.com/assets/vikoisoft/images/logo-white.png"
+                  alt="Vikoisoft logo"
+                  width="200px"
+                />
+              </a>
+              <p style="text-align: justify">
+                Công ty cổ phần Vikoisoft là một trong những công ty Công nghệ
+                thông tin hàng đầu tại Việt Nam, chuyên cung cấp dịch vụ phát
+                triển phần mềm và giải pháp phần mềm trong lĩnh vực Blockchain
+                cho các doanh nghiệp trong nước và quốc tế.
+              </p>
+              <div class="social mt-3">
+                <a href="https://www.facebook.com/vikoisoftvn">
+                  <img
+                    src="https://vikoisoft.com/assets/vikoisoft/images/icon/fb-brands.svg"
+                    alt="facebook"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <!-- Dịch vụ -->
+            <div class="col-md-3 col-7">
+              <ul>
+                <li><strong>Dịch vụ của chúng tôi</strong></li>
+                <li><a href="#">Gia công phần mềm 1</a></li>
+                <li><a href="#">Gia công phần mềm</a></li>
+              </ul>
+            </div>
+
+            <!-- Link -->
+            <div class="col-md-2 col-5">
+              <ul>
+                <li><strong>Link</strong></li>
+                <li><a href="#">Dịch vụ</a></li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+
+            <!-- Liên hệ -->
+            <div class="col-md-3">
+              <ul>
+                <li><strong>Contact</strong></li>
+                <li>📞 +84 944-150-825</li>
+                <li>📧 info@vikoisoft.com</li>
+                <li>
+                  📍 Tầng 10, Tòa nhà Việt Á Tower, Số 9 phố Duy Tân, Cầu Giấy,
+                  Hà Nội
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Bản quyền -->
+          <div class="footer-copyright">
+            Copyright © 2025 <a href="https://vikoisoft.com">VIKOISOFT.COM</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

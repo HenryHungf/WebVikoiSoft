@@ -1,0 +1,787 @@
+/* Navbar hover + active */
+.navbar-nav .nav-link {
+  color: white;
+  transition: all 0.3s ease;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ff6600;
+}
+
+/* Flag icon hover */
+.navbar img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #ece8e5 !important;
+}
+
+.footer {
+  background: linear-gradient(45deg, #9d3603, #5c1a00);
+  color: white;
+  padding: 40px 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffcc99;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer-inner .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer .social img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer .header_logo img {
+  width: 180px;
+}
+
+.footer .footer-copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #f3f3f3;
+}
+
+.hero {
+  width: 100%;
+  background: linear-gradient(to right, #ec5800, #623b3b);
+  padding: 60px 0;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+/* Cột trái: Hình ảnh */
+.slider {
+  width: 50%;
+  max-width: 600px;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Cột phải: Giới thiệu */
+.hero-content {
+  background: #ec5800;
+  color: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  max-width: 600px;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content p {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.gr-btn a {
+  margin-right: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.btn-secondary {
+  background-color: #0066cc;
+  color: white;
+}
+
+.btn-border {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+  }
+
+  .slider,
+  .hero-content {
+    width: 100%;
+  }
+}
+.slider {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* Nút điều hướng */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+/* Dot dưới */
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  background-color: #333;
+}
+.hero {
+  width: 100%;
+  background: linear-gradient(to right, #ec5800, #623b3b);
+  padding: 100px 0 60px 0; /* thêm khoảng cách phía trên */
+}
+/* selector about */
+
+.about {
+  padding: 80px 0;
+  background-color: #fefefe;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.about-content .section-title span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ee9209;
+}
+
+.about-content .text-main {
+  color: #ec5800;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.about-content .text-secondary {
+  color: #0066cc;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 145, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.03);
+}
+/* section .ecosystem */
+.ecosystem {
+  padding: 80px 0;
+  background: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.section-title span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.text-main {
+  color: #ec5800;
+}
+
+.text-secondary {
+  color: #0066cc;
+}
+
+.section-content {
+  color: #333;
+  font-size: 16px;
+  max-width: 720px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+/* Danh sách dịch vụ dạng grid */
+.ecosystem-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Mỗi ô dịch vụ */
+.ecosystem-item {
+  background: #f8f8f8;
+  padding: 24px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ecosystem-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ecosystem-icon img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 16px;
+}
+
+.ecosystem-item h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.ecosystem-item p {
+  font-size: 15px;
+  color: #555;
+  text-align: justify;
+}
+/* section blockchain */
+.blockchain {
+  background: linear-gradient(to right, #f06e03, #e66408);
+  padding: 80px 0;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.blockchain-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.blockchain p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.blockchain-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 16px rgba(240, 108, 0, 0.4);
+}
+
+.blockchain-img:hover {
+  transform: scale(1.05);
+}
+
+/* section bgwworld */
+.ability {
+  padding: 80px 0;
+  background: #f9f9f9;
+}
+
+.tab-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.tablink {
+  background: #ec5800;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.tablink:hover,
+.tablink.active {
+  background-color: #0066cc;
+}
+
+.technology--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.technology--item {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.technology--item img {
+  width: 64px;
+  height: auto;
+}
+
+.technology--item:hover {
+  transform: scale(1.05);
+}
+
+/* indexvechungtoi */
+.vision-mission {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.vision,
+.mission {
+  flex: 1 1 50%;
+  padding: 40px;
+  color: white;
+  min-height: 400px;
+}
+
+.vision {
+  background: linear-gradient(135deg, #0f66cc, #0847a8);
+}
+
+.mission {
+  background: linear-gradient(135deg, #d44b18, #a9320f);
+}
+
+.icon {
+  width: 64px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+/* chỉnh ảnh xuống dưới */
+.about-img {
+  margin-top: 200px;
+}
+/* slide 3 */
+.paradigm {
+  padding: 80px 0;
+  background-color: #f4f3f3;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.paradigm .section-content {
+  max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.paradigm-item {
+  background: #df6106;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.paradigm-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.paradigm-item img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.paradigm-item h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #f2f0ef;
+}
+
+.paradigm-item p {
+  font-size: 15px;
+  color: #f6e7e7;
+  line-height: 1.5;
+}
+.section-title .title-uppercase {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 28px;
+  display: inline-block;
+  margin-bottom: 24px;
+  color: #333;
+}
+
+.title-company {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #111010;
+}
+
+.company-info {
+  list-style: none;
+  padding-left: 0;
+  max-width: 800px;
+  margin: 0 auto 32px auto;
+}
+
+.company-info li {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.breadcrumb {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+
+.breadcrumb-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.breadcrumb-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 128, 0, 0.791); /* màu cam nhạt có độ mờ 40% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.breadcrumb-inner h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.breadcrumb-nav {
+  gap: 10px;
+  font-size: 16px;
+}
+
+.breadcrumb-nav a {
+  color: white;
+  text-decoration: underline;
+}
+
+.breadcrumb-nav span {
+  color: white;
+}
+.breadcrumb {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+.breadcrumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.breadcrumb-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(239, 102, 4, 0.89); /* Cam nhạt phủ */
+}
+
+.breadcrumb-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.breadcrumb-inner h1 {
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.breadcrumb-inner .d-flex {
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.breadcrumb-inner a {
+  color: white;
+  text-decoration: underline;
+}
+
+.breadcrumb-inner span {
+  color: white;
+}
+.blockchain-section {
+  background: #141619;
+  padding: 60px 20px;
+  color: #fff;
+}
+
+.section-title span {
+  font-size: 20px;
+  color: #bbb;
+}
+
+.section-title .text-main {
+  font-weight: bold;
+  color: orange;
+  font-size: 28px;
+}
+
+.section-title .text-secondary {
+  font-weight: bold;
+  font-size: 28px;
+  color: #fff;
+}
+
+.section-content {
+  font-size: 16px;
+  color: #ccc;
+  margin: 10px 0 30px;
+  max-width: 800px;
+}
+
+.blockchain-slider {
+  background: #421801;
+  padding: 40px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blockchain-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.blockchain-item .left {
+  flex: 1 1 50%;
+  padding-right: 40px;
+}
+
+.blockchain-item .left .text-main {
+  color: orange;
+  font-size: 18px;
+}
+
+.blockchain-item .left .text-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.blockchain-item .left p {
+  margin: 20px 0;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.blockchain-item .btn {
+  display: inline-block;
+  background: #0067d9;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.blockchain-item .btn span {
+  margin-left: 10px;
+}
+
+.blockchain-item .right {
+  flex: 1 1 40%;
+  text-align: right;
+}
+
+.blockchain-item .right img {
+  max-width: 100%;
+  height: auto;
+}
+.contact-section {
+  background-color: #121415; /* Nền tối */
+  padding: 60px 0;
+  color: #dcdcdc;
+}
+
+.contact-item {
+  background-color: #1b1d1f;
+  border-radius: 12px;
+  text-align: center;
+  padding: 40px 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 132, 0, 0.2);
+}
+
+.contact-icon {
+  background-color: #ff6a00;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.contact-icon img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+.contact-item h5 {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.contact-item p {
+  font-size: 14px;
+  color: #c2c2c2;
+  margin-bottom: 10px;
+}
+
+.contact-item a {
+  color: #4eaaff;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
